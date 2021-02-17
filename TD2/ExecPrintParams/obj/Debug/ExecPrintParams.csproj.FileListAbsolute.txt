@@ -1,0 +1,7 @@
+D:\polytech\SI4\S8\SOC\eiin839\TD2\ExecPrintParams\bin\Debug\ExecPrintParams.exe.config
+D:\polytech\SI4\S8\SOC\eiin839\TD2\ExecPrintParams\bin\Debug\ExecPrintParams.exe
+D:\polytech\SI4\S8\SOC\eiin839\TD2\ExecPrintParams\bin\Debug\ExecPrintParams.pdb
+D:\polytech\SI4\S8\SOC\eiin839\TD2\ExecPrintParams\obj\Debug\ExecPrintParams.csprojAssemblyReference.cache
+D:\polytech\SI4\S8\SOC\eiin839\TD2\ExecPrintParams\obj\Debug\ExecPrintParams.csproj.CoreCompileInputs.cache
+D:\polytech\SI4\S8\SOC\eiin839\TD2\ExecPrintParams\obj\Debug\ExecPrintParams.exe
+D:\polytech\SI4\S8\SOC\eiin839\TD2\ExecPrintParams\obj\Debug\ExecPrintParams.pdb

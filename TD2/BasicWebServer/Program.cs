@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Net;
 using System.Text;
 using System.Web;
+using System.Reflection;
+
 
 namespace BasicServerHTTPlistener
 {
@@ -41,7 +44,7 @@ namespace BasicServerHTTPlistener
                 Console.WriteLine("Syntax error: the call must contain at least one web server url as argument");
             }
             listener.Start();
-
+    
             // get args 
             foreach (string s in args)
             {
@@ -85,6 +88,7 @@ namespace BasicServerHTTPlistener
                 Console.WriteLine(request.Url.Port);
                 //get path in url 
                 Console.WriteLine(request.Url.LocalPath);
+      
 
                 // parse path in url 
                 foreach (string str in request.Url.Segments)
@@ -101,15 +105,51 @@ namespace BasicServerHTTPlistener
                 Console.WriteLine("param2 = " + HttpUtility.ParseQueryString(request.Url.Query).Get("param2"));
                 Console.WriteLine("param3 = " + HttpUtility.ParseQueryString(request.Url.Query).Get("param3"));
                 Console.WriteLine("param4 = " + HttpUtility.ParseQueryString(request.Url.Query).Get("param4"));
+                string[] querys = { HttpUtility.ParseQueryString(request.Url.Query).Get("param1"),HttpUtility.ParseQueryString(request.Url.Query).Get("param2") 
+                ,HttpUtility.ParseQueryString(request.Url.Query).Get("param3"),HttpUtility.ParseQueryString(request.Url.Query).Get("param4")};
+
+                string responseString = "";
+                string mymethode = "";
+                Mymethod m = new Mymethod();
+                mymethode = request.Url.Segments[request.Url.Segments.Length-1];
+
+                if (!mymethode.Equals("favicon.ico") && mymethode.Length>1)
+                {
+                    Type montype = m.GetType();
+                    MethodInfo maMethod = montype.GetMethod(mymethode);
+                    Object[] myarg = { querys };
+                    responseString = (String)maMethod.Invoke(m, myarg);
+                }
+                else
+                {
+                   responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
+                }
 
                 //
                 Console.WriteLine(documentContents);
 
                 // Obtain a response object.
                 HttpListenerResponse response = context.Response;
-
+                string result = "";
                 // Construct a response.
-                string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
+                System.Diagnostics.ProcessStartInfo start = new System.Diagnostics.ProcessStartInfo();
+                start.FileName = @"D:\polytech\SI4\S8\SOC\eiin839\TD2\ExecPrintParams\bin\Debug\ExecPrintParams.exe"; // Specify exe name.
+                start.Arguments = querys[0]+querys[1]+querys[2]+querys[3]; // Specify arguments.
+                start.UseShellExecute = false;
+                start.RedirectStandardOutput = true;
+                using (Process process = Process.Start(start))
+                {
+                    //
+                    // Read in all the text from the process with the StreamReader.
+                    //
+                    using (StreamReader reader = process.StandardOutput)
+                    {
+                        result = reader.ReadToEnd();
+                        /*Console.WriteLine(result);
+                        Console.ReadLine();*/
+                        responseString = result;
+                    }
+                }
                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
                 // Get a response stream and write the response to it.
                 response.ContentLength64 = buffer.Length;
