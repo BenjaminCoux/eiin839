@@ -1,9 +1,6 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\HttpListener",
-    "\\HttpListener\\BasicServerHttpListener"
+    ""
   ],
-  "SelectedNode": "\\HttpListener\\BasicServerHttpListener\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

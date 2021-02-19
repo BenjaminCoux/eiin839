@@ -112,13 +112,20 @@ namespace BasicServerHTTPlistener
                 string mymethode = "";
                 Mymethod m = new Mymethod();
                 mymethode = request.Url.Segments[request.Url.Segments.Length-1];
-
-                if (!mymethode.Equals("favicon.ico") && mymethode.Length>1)
+         
+                if (mymethode.Equals("printParams"))
                 {
                     Type montype = m.GetType();
                     MethodInfo maMethod = montype.GetMethod(mymethode);
                     Object[] myarg = { querys };
                     responseString = (String)maMethod.Invoke(m, myarg);
+                }
+                else if(mymethode.Equals("printParamsFromEXE"))
+                {
+                    Type montype = m.GetType();
+                    MethodInfo mameth = montype.GetMethod(mymethode);
+                    Object[] myarg = { querys };
+                    responseString = (String)mameth.Invoke(m, myarg);
                 }
                 else
                 {
@@ -130,26 +137,7 @@ namespace BasicServerHTTPlistener
 
                 // Obtain a response object.
                 HttpListenerResponse response = context.Response;
-                string result = "";
-                // Construct a response.
-                System.Diagnostics.ProcessStartInfo start = new System.Diagnostics.ProcessStartInfo();
-                start.FileName = @"D:\polytech\SI4\S8\SOC\eiin839\TD2\ExecPrintParams\bin\Debug\ExecPrintParams.exe"; // Specify exe name.
-                start.Arguments = querys[0]+querys[1]+querys[2]+querys[3]; // Specify arguments.
-                start.UseShellExecute = false;
-                start.RedirectStandardOutput = true;
-                using (Process process = Process.Start(start))
-                {
-                    //
-                    // Read in all the text from the process with the StreamReader.
-                    //
-                    using (StreamReader reader = process.StandardOutput)
-                    {
-                        result = reader.ReadToEnd();
-                        /*Console.WriteLine(result);
-                        Console.ReadLine();*/
-                        responseString = result;
-                    }
-                }
+          
                 byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
                 // Get a response stream and write the response to it.
                 response.ContentLength64 = buffer.Length;
