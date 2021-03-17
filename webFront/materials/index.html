@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- The title of the page is written in the tab of the browser. -->
+    <title>Myfirst Web Services UI  client</title>
+    <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+    <label for="monInput">saisie :</label>
+    <input id="monInput" name="saisie">
+    <button id="b1" onclick="retrieveAllContracts();">Retrieve Contracts</button><br />
+    <input list="contract" id="inC" name="mesContrat" />
+    <datalist id="contract"></datalist>
+    <button id="b2" onclick="retrieveContractStations();">retrieve stations</button><br />
+    <lablel id="k1"> entrer votre position</lablel>
+    <input id="in" /><input  id="inn"/>
+    <button id="b3" onclick="stationsRetrieved();">get closest stations</button>
+    <h1 id="end"></h1>
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>

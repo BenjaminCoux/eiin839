@@ -1,0 +1,7 @@
+D:\polytech\SI4\S8\SOC\eiin839\webFront\consoletd4\consoletd4\bin\Debug\consoletd4.exe.config
+D:\polytech\SI4\S8\SOC\eiin839\webFront\consoletd4\consoletd4\bin\Debug\consoletd4.exe
+D:\polytech\SI4\S8\SOC\eiin839\webFront\consoletd4\consoletd4\bin\Debug\consoletd4.pdb
+D:\polytech\SI4\S8\SOC\eiin839\webFront\consoletd4\consoletd4\obj\Debug\consoletd4.csprojAssemblyReference.cache
+D:\polytech\SI4\S8\SOC\eiin839\webFront\consoletd4\consoletd4\obj\Debug\consoletd4.csproj.CoreCompileInputs.cache
+D:\polytech\SI4\S8\SOC\eiin839\webFront\consoletd4\consoletd4\obj\Debug\consoletd4.exe
+D:\polytech\SI4\S8\SOC\eiin839\webFront\consoletd4\consoletd4\obj\Debug\consoletd4.pdb
