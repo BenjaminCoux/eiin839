@@ -1,0 +1,7 @@
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\MathLibrary\bin\Debug\MathLibrary.dll.config
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\MathLibrary\bin\Debug\MathLibrary.dll
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\MathLibrary\bin\Debug\MathLibrary.pdb
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\MathLibrary\obj\Debug\MathLibrary.csprojAssemblyReference.cache
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\MathLibrary\obj\Debug\MathLibrary.csproj.CoreCompileInputs.cache
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\MathLibrary\obj\Debug\MathLibrary.dll
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\MathLibrary\obj\Debug\MathLibrary.pdb

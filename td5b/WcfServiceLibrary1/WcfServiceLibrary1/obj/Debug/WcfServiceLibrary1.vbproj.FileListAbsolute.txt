@@ -1,0 +1,11 @@
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll.config
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.pdb
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.xml
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.vbprojAssemblyReference.cache
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.Resources.resources
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.vbproj.GenerateResource.cache
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.vbproj.CoreCompileInputs.cache
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.dll
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.xml
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.pdb

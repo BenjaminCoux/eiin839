@@ -1,0 +1,7 @@
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\mathConsole\bin\Debug\mathConsole.exe.config
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\mathConsole\bin\Debug\mathConsole.exe
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\mathConsole\bin\Debug\mathConsole.pdb
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\mathConsole\obj\Debug\mathConsole.csprojAssemblyReference.cache
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\mathConsole\obj\Debug\mathConsole.csproj.CoreCompileInputs.cache
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\mathConsole\obj\Debug\mathConsole.exe
+D:\polytech\SI4\S8\SOC\eiin839\td5b\WcfServiceLibrary1\mathConsole\obj\Debug\mathConsole.pdb
